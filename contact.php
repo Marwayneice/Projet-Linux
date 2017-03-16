@@ -1,6 +1,5 @@
 <?php
 	include_once('fonction.php');
-	$idConn=openDB();
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,7 +21,5 @@
 		</div>
 	</footer>
 
-<?php
-		CloseDB($idConn);
-?>
+
 </html>
