@@ -1,12 +1,12 @@
 <?php
 	include_once('fonction.php');
+	$idConn=openDB();
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<title> Où nous trouver ? </title>
-		<link rel="stylesheet" href="styles.css"/>
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+		<?php linkCss(); ?>
 	</head>
 	<body>
 	<header>
@@ -14,11 +14,15 @@
 			linkmenu(3);
 		?>
 	</header>
-	
+	</body>
 	<footer>
 		<div id="pied_page">
+			<?php piedPage(); ?>
 			<center>Fait par A Link To The Future</center>
 		</div>
 	</footer>
-	</body>
+
+<?php
+		CloseDB($idConn);
+?>
 </html>
